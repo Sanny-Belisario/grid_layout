@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #707070;
+}
+.container{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw; 
+    justify-content: center;
+    align-content: start;
+    grid-gap: 1vw;
+}
+.container-flex{
+    display: flex;
+}
+
+h1{
+    grid-column: span 6;
+    font-size: 22px;
+    line-height: 40px;
+    padding-top: 13vh;
+}
+#logo{
+    grid-column: 3/5;
+}
+#logo img{
+    width: 30vw;
+}
+nav{
+    width: 100vw;
+    grid-column: span 6;
+}
+nav ul {
+    display: grid;
+    grid-template-columns: 22vw 22vw 22vw 22vw;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.container .item1 {
+    grid-column: 1/2;
+}
+.item2 {
+    grid-column: 2/3;
+}
+.item3 {
+    grid-column: 3/4;
+}
+.item4 {
+    grid-column: 4/5;
+}
+
+header{
+    width: 100vw;
+    height: 13vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #F8F6F6;
+}
+section div{
+    grid-column: span 6;
+}
+#sobre div div{
+    float: left;
+    width: 50%;
+    align-self: flex-end
+}
+#sobre div div img{
+    width: 90%;
+    border: black 1px solid;
+}
+#sobre{
+    letter-spacing: 1px;
+    line-height: 20px; 
+}
+#sobre div p{
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.desktop {
+    display: none;
+}
+
+#cursos div img {
+    width:100%;
+    border: 1px solid #ddd;
+}
+
+#cursos div h2{
+    background-color:#ddd;
+    text-align: Center;
+    padding:2vh 0 2vh 0;
+}
+
+#cursos.container {
+    grid-template-columns: 13vw 13vw 13vw 13vw 13vw 13vw;
+}
+
+#curso-wd{
+    border-top:2vh solid#0f0;
+}
+
+#curso-prog{
+    border-top:2vh solid#f00;
+}
+#curso-bd{
+    border-top:2vh solid#00f;
+}
+.border {
+    border: 2px solid #000;
+}
+
+div#planos-bronze {
+    border-top: 2vh solid #C59B12;
+    border-bottom: 2vh solid #C59B12;
+    margin-bottom: 10px;
+}
+
+div#planos-prata {
+    border-top: 2vh solid #F6EFF0;
+    border-bottom: 2vh solid #F6EFF0;
+    margin-bottom: 10px;
+}
+
+div#planos-ouro {
+    border-top: 2vh solid #F1F115;
+    border-bottom: 2vh solid #F1F115;
+    margin-bottom: 10px;
+}
+
+.button-planos {
+    display: none;
+}
+
+#planos.container {
+    grid-template-columns: 13vw 13vw 13vw 13vw 13vw 13vw;
+}
+
+#planos h2 {
+    background-color: #EEE8E8;
+    text-align: center;
+    padding:1vh 0 1vh 0;
+    border: 1px solid #9B9898;
+}
+
+#planos p {
+    font-size: 20px;
+    padding: 5px 0 20px 0;
+}
+
+div#planos div {
+    border: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+#planos-bronze #preco {
+    background-color: #C59B12;
+    padding: 5px 0 15px 10px;
+}
+
+#planos-prata #preco {
+    background-color: #F6EFF0;
+    padding: 5px 0 15px 10px;
+}
+
+#planos-ouro #preco {
+    background-color: #F1F115;
+    padding: 5px 0 15px 10px;
+}
+
+#qualidade {
+    border-left: 1vh solid #4632FD;
+    padding: 0 0 5px 3px;
+}
+
+#eficiencia {
+    border-left: 1vh solid #FE2222;
+    padding: 0 0 5px 3px;
+}
+
+#compromisso {
+    border-left: 1vh solid #098809;
+    padding: 0 0 5px 3px;
+}
+
+#inovacao {
+    border-left: 1vh solid #F5FB30;
+    padding: 0 0 5px 3px;
+}
+
+#pesquisa {
+    border-left: 1vh solid #F632FD;
+    padding: 0 0 5px 3px;
+}
+
+#qualidade2 {
+    border-left: 1vh solid #32C5FD;
+    padding: 0 0 5px 3px;
+}
+
+#valores p {
+    margin-left: 2vh;
+}
+
+div#valores {
+    padding: 0 2px;
+}
+
+@media only screen and (min-width: 980px){
+    #logo{
+        grid-column: 1/2;
+    }
+    #logo img{
+        width: 10vw;
+    }
+    nav{
+        grid-column: 3/6
+    }
+    section div{
+        grid-column: span 2;
+    }
+    #sobre div{
+        grid-column: span 3;
+    }
+
+    #cursos{
+        display:flex;
+    }
+    #cursos div{
+        align-self: flex-end;
+        width: 30%;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    #sobre div p {
+        font-size: 19px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #sobre.container {
+        grid-template-columns: 13vw 13vw 13vw 13vw 13vw 13vw 10vw;
+    }
+
+    #sobre .container-flex div{
+        margin-bottom: 15px;
+        margin-left: 30px;
+    }
+
+    #planos{
+        display:flex;
+    }
+
+    #planos div#planos-bronze{
+        align-self: flex-end;
+        width: 30%;
+    }
+
+    #planos div#planos-prata{
+        align-self: flex-end;
+        width: 30%;
+    }
+
+    #planos div#planos-ouro{
+        align-self: flex-end;
+        width: 30%;
+    }
+
+    #planos-bronze .button-planos {
+        display: block;
+        background-color: #C59B12;
+        text-align: center;
+    }
+
+    #planos-prata .button-planos {
+        display: block;
+        background-color: #F6EFF0;
+        text-align: center;
+    }
+
+    #planos-ouro .button-planos {
+        display: block;
+        background-color: #F1F115;
+        text-align: center;
+    }
+
+    div#planos-bronze {
+        border-bottom: 0vh solid #C59B12;
+        border-left: 2vh solid #C59B12;
+        border-right: 2vh solid #C59B12;
+    }
+    
+    div#planos-prata {
+        border-bottom: 0vh solid #F6EFF0;
+        border-left: 2vh solid #F6EFF0;
+        border-right: 2vh solid #F6EFF0;
+    }
+    
+    div#planos-ouro {
+        border-bottom: 0vh solid #F1F115;
+        border-left: 2vh solid #F1F115;
+        border-right: 2vh solid #F1F115;
+    }
+
+    #planos p {
+        font-size: 24px;
+    }
+
+    #planos button {
+        font-size: 24px;
+        margin: 1vw 0;
+        padding: 0 1vw;
+        border-radius: 4px;
+        border: 1px solid #9B9898;
+        box-shadow: 1px 1px;
+    }
+
+    #precos div p{
+        width: 150vw;
+    }
+    section#valores.container {
+        grid-gap: 2vw;
+        grid-template-columns: 14vw 14vw 14vw 14vw 14vw 14vw;
+        margin-bottom: 11vw;
+    }
+    #valores h3 {
+        font-size: 17px;
+    }
+    #valores p {
+        font-size: 15px;
+    }
+    div#valores {
+        margin-top: 2vw;
+    }
+    .border {
+        border: none;
+    }
+    .border {
+        border: none;
+    }
+    #border-desktop {
+        border-top: 2px solid rgb(119, 119, 119);
+    }
+    nav{
+        grid-column: 4/6;
+        align-self: flex-end;
+        font-weight: bold;
+    }
+    nav ul {
+        grid-template-columns: 9vw 9vw 9vw 9vw;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+}
